@@ -1,7 +1,9 @@
 const SearchForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.elements);
+    const searchValue = e.target.elements.search.value;
+    if (!searchValue) return;
+    console.log(searchValue);
   };
 
   return (
